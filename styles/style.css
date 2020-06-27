@@ -18,6 +18,7 @@ body {
 }
 
 header {
+  position: relative;
   width: 100%;
   min-height: 10vh;
   text-align: center;
@@ -25,7 +26,13 @@ header {
 }
 
 header h1 {
-  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 4vh;
 }
 
 main {
@@ -33,11 +40,7 @@ main {
   min-height: 80vh;
   border: 2px red solid;
 }
-/*
-#galileo-pic {
-  
-}
-*/
+
 #galileo-pic {
   max-width: 100%;
   height: auto;
@@ -52,7 +55,7 @@ main {
 }
 
 #info {
-  color: #f7f7f7;
+  color: #FFFFFF;
   font-size: 1.3rem;
   padding-top: 4vh;
   padding-left: 4vw;
@@ -61,8 +64,26 @@ main {
 }
 
 footer {
+  position: relative;
   width: 100%;
   min-height: 10vh;
   border: 2px red solid;
 }
 
+footer a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+footer a:visited {
+  color: #78766A;
+}
+
+#sign {
+  font-family: 'Pacifico', cursive;
+  font-size: 2rem;
+}
