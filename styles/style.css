@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  /* base comment style for
+   * rem calculations */
+  font-size: 10px;
+}
+
+body {
+  padding-left: 5vw;
+  padding-right: 5vw;
+  height: 100%;
+  /* Base color is #0a0b0d
+  *  complementary is #14120F */
+  background-color: #0a0b0d;
+}
+
+header {
+  width: 100%;
+  min-height: 10vh;
+  text-align: center;
+  border: 2px red solid;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+main {
+  width: 100%;
+  min-height: 80vh;
+  border: 2px red solid;
+}
+/*
+#galileo-pic {
+  
+}
+*/
+#galileo-pic {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2vh;
+  border: 2rem groove #484B50;
+  border-radius: 0.3rem;
+  /* border-image: url("../img/stars.jpg") 10% fill;
+  padding: 5vw;
+  */
+}
+
+#info {
+  color: #f7f7f7;
+  font-size: 1.3rem;
+  padding-top: 4vh;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  padding-bottom: 2vh;
+}
+
+footer {
+  width: 100%;
+  min-height: 10vh;
+  border: 2px red solid;
+}
+
