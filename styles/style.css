@@ -15,14 +15,15 @@ body {
   /* Base color is #0a0b0d
   *  complementary is #14120F */
   background-color: #0A0B0D;
+  color: #FFFFFF;
 }
 
 header {
   position: relative;
   width: 100%;
-  min-height: 10vh;
+  min-height: calc(10vh + 3vw);
   text-align: center;
-  border: 2px red solid;
+  /* border: 2px red solid; */
 }
 
 header h1 {
@@ -32,13 +33,13 @@ header h1 {
   transform: translate(-50%, -50%);
   color: #ffffff;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 4vh;
+  font-size: calc(2rem + 3vw);
 }
 
 main {
   width: 100%;
   min-height: 80vh;
-  border: 2px red solid;
+  /* border: 2px red solid; */
 }
 
 #galileo-pic {
@@ -48,26 +49,54 @@ main {
   margin-left: auto;
   margin-right: auto;
   margin-top: 2vh;
+  border-radius: 5px;
+  /*
   border: 2vw solid #082A37;
   -webkit-border-radius: 2vw;
   -moz-border-radius: 2vw;
   border-radius: 2vw;
+  */
+}
+
+#caption {
+  position: relative;
+  width: 100%;
+  margin-top: 1.5vh;
+  margin-bottom: 2vh;
+  overflow: hidden;
+  min-height: calc(3.8rem + 2vh)
+}
+
+#caption span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: calc(1rem + .5vw);
+  max-width: 207px;
+  line-height: 1.4rem;
 }
 
 #info {
   color: #FFFFFF;
-  font-size: 1.3rem;
+  font-size: calc(1.3rem + .3vw);
   padding-top: 4vh;
   padding-left: 4vw;
   padding-right: 4vw;
   padding-bottom: 2vh;
+  font-family: 'Merriweather', serif;
+  line-height: calc(20px + .3vh);
+}
+
+#info span {
+  font-weight: bold;
 }
 
 footer {
   position: relative;
   width: 100%;
   min-height: 10vh;
-  border: 2px red solid;
+  /* border: 2px red solid; */
 }
 
 footer a {
@@ -75,12 +104,24 @@ footer a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-decoration: none;
-  color: #FFFFFF;
 }
 
-footer a:visited {
+a {
+  text-decoration: underline;
+  color: #FFFFFF;
+  
+}
+
+/*
+a {
+  color: #FFFFFF;
+  text-decoration: underline #082A37 .3rem;
+}
+
+*/
+a:visited {
   color: #78766A;
+  text-decoration: none;
 }
 
 #sign {
