@@ -131,12 +131,12 @@ a:visited {
   color: #78766A;
   text-decoration: none;
 }
-
+/*
 #sign {
   font-family: 'Pacifico', cursive;
   font-size: 2rem;
 }
-
+*/
 @media screen and (min-width: 900px) {
   body {
     padding-left: 15vw;
@@ -152,6 +152,18 @@ a:visited {
   body {
     padding-left: 20vw;
     padding-right: 20vw;
+  }
+  
+  header {
+    max-height: 20vh;
+  }
+  
+  main {
+    max-height: 60vh;
+  }
+  
+  footer {
+    max-height: 20vh;
   }
 }
 
