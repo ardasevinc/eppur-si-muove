@@ -101,11 +101,17 @@ footer {
   /* border: 2px red solid; */
 }
 
-footer a {
+#sign-link {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+#source {
+  position: absolute;
+  top: 100%;
+  left: 0;
 }
 
 a {
