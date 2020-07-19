@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  outline: 1px solid red;
+  /*outline: 1px solid red;*/
 }
 
 html {
@@ -97,7 +97,8 @@ main {
 }
 
 footer {
-  position: relative;
+  position: absolute;
+  bottom: 0%;
   width: 100%;
   min-height: 10vh;
   /*border: 2px red solid;*/
@@ -191,3 +192,5 @@ a:visited {
     padding-right: 30%;
   }
 }
+
+@media screen and (max-width: 1000px and min-height: 1081px)
