@@ -1,22 +1,22 @@
 * {
   box-sizing: border-box;
+  outline: 1px solid red;
 }
 
 html {
   /* base comment style for
    * rem calculations */
   font-size: 10px;
+  /*min-height: 100%;*/
+  min-width: 100%;
 }
 
 body {
-  padding-left: 5vw;
-  padding-right: 5vw;
-  height: 100%;
   /* Base color is #0a0b0d
   *  complementary is #14120F */
   background-color: #0A0B0D;
-  color: #FFFFFF;
-      
+  color: #FFFFFF;    
+  min-width: 100%;
 }
 
 header {
@@ -24,7 +24,7 @@ header {
   width: 100%;
   min-height: calc(10vh + 3vw);
   text-align: center;
-  /* border: 2px red solid; */
+  /*border: 2px red solid;*/
 }
 
 header h1 {
@@ -40,7 +40,9 @@ header h1 {
 main {
   width: 100%;
   min-height: 80vh;
-  /* border: 2px red solid; */
+  padding-left: 5vw;
+  padding-right: 5vw;
+  /*border: 2px red solid;*/
 }
 
 #galileo-pic {
@@ -98,7 +100,7 @@ footer {
   position: relative;
   width: 100%;
   min-height: 10vh;
-  /* border: 2px red solid; */
+  /*border: 2px red solid;*/
 }
 
 #sign-link {
@@ -107,13 +109,13 @@ footer {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
+/*
 #source {
   position: absolute;
   top: 100%;
   left: 0;
 }
-
+*/
 a {
   text-decoration: underline;
   color: #FFFFFF;
@@ -131,14 +133,14 @@ a:visited {
   color: #78766A;
   text-decoration: none;
 }
-/*
+
 #sign {
   font-family: 'Pacifico', cursive;
-  font-size: 2rem;
+  font-size: calc(2rem + 1.5vw);
 }
-*/
+
 @media screen and (min-width: 900px) {
-  body {
+  main {
     padding-left: 15vw;
     padding-right: 15vw;
   }
@@ -149,27 +151,43 @@ a:visited {
 }
 
 @media screen and (min-width: 1000px) {
-  body {
-    padding-left: 20vw;
-    padding-right: 20vw;
+  html, body {
+    height: 100%;
+  }
+  main {
+    padding-left: 20%;
+    padding-right: 20%;
+    min-height: 60%;
+  }
+  
+  #info p {
+    font-size: 1.9rem;
+  }
+  
+  #galileo-pic {
+    margin-top: 0;
+  }
+  
+  #caption {
+    margin: 0;
+  }
+  
+  #caption span {
+    font-size: 1.4rem;
   }
   
   header {
-    max-height: 20vh;
-  }
-  
-  main {
-    max-height: 60vh;
+    max-height: 20%;
   }
   
   footer {
-    max-height: 20vh;
+    max-height: 20%;
   }
 }
 
 @media screen and (min-width: 2000px) {
   body {
-    padding-left: 30vw;
-    padding-right: 30vw;
+    padding-left: 30%;
+    padding-right: 30%;
   }
 }
