@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  /*outline: 1px solid red;*/
+  outline: 1px solid red;
 }
 
 html {
@@ -178,18 +178,18 @@ a:visited {
   }
   
   header {
-    max-height: 20%;
+    min-height: 20%;
   }
   
   footer {
-    max-height: 20%;
+    min-height: 20%;
   }
 }
 
 @media screen and (min-width: 2000px) {
-  body {
-    padding-left: 20%;
-    padding-right: 20%;
+  main {
+    padding-left: 30%;
+    padding-right: 30%;
   }
 }
 
@@ -203,3 +203,4 @@ a:visited {
     bottom: 0%;
   }
 }
+
