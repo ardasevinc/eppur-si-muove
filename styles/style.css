@@ -9,7 +9,7 @@ html {
   /* base comment style for
    * rem calculations */
   font-size: 10px;
-  /*min-height: 100%;*/
+  min-height: 100%;
   min-width: 100%;
 }
 
@@ -19,6 +19,7 @@ body {
   background-color: #0A0B0D;
   color: #FFFFFF;    
   min-width: 100%;
+  min-height: 100%;
 }
 
 header {
@@ -52,7 +53,7 @@ main {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 2vh;
+  /* margin-top: 2vh; */
   border-radius: 5px;
   /*
   border: 2vw solid #082A37;
@@ -65,8 +66,6 @@ main {
 #caption {
   position: relative;
   width: 100%;
-  margin-top: 1.5vh;
-  margin-bottom: 2vh;
   overflow: hidden;
   min-height: calc(3.8rem + 2vh)
 }
@@ -101,7 +100,7 @@ footer {
   position: relative;
   width: 100%;
   min-height: 10vh;
-  /*border: 2px red solid;*/
+  /* outline: 1px red solid; */
 }
 
 #sign-link {
@@ -109,17 +108,20 @@ footer {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  padding-bottom: 2vh;
 }
 
 #source {
   position: absolute;
-  top: 100%;
-  right: 0;
-}
-
-#source span {
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* bottom: 0; */
+  /* right: 0; */
+  display: block;
   font-family: 'Merriweather', serif;
   font-size: calc(1rem + .6vw);
+  /* outline: 1px red solid; */
 }
 
 a {
