@@ -1,4 +1,6 @@
 * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   /* outline: 1px solid red; */
 }
@@ -24,7 +26,6 @@ header {
   width: 100%;
   min-height: calc(10vh + 3vw);
   text-align: center;
-  /*border: 2px red solid;*/
 }
 
 header h1 {
@@ -109,13 +110,18 @@ footer {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-/*
+
 #source {
   position: absolute;
   top: 100%;
-  left: 0;
+  right: 0;
 }
-*/
+
+#source span {
+  font-family: 'Merriweather', serif;
+  font-size: calc(1rem + .6vw);
+}
+
 a {
   text-decoration: underline;
   color: #FFFFFF;
