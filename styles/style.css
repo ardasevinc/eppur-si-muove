@@ -1,0 +1,224 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /* outline: 1px solid red; */
+}
+
+html {
+  /* base comment style for
+   * rem calculations */
+  font-size: 10px;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+body {
+  /* Base color is #0a0b0d
+  *  complementary is #14120F */
+  background-color: #0A0B0D;
+  color: #FFFFFF;    
+  min-width: 100%;
+  min-height: 100%;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  min-height: calc(10vh + 3vw);
+  text-align: center;
+}
+
+header h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: calc(2rem + 3vw);
+}
+
+main {
+  width: 100%;
+  /* min-height: 80vh; */
+  padding-left: 5vw;
+  padding-right: 5vw;
+  /*border: 2px red solid;*/
+}
+
+#galileo-pic {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* margin-top: 2vh; */
+  border-radius: 5px;
+  /*
+  border: 2vw solid #082A37;
+  -webkit-border-radius: 2vw;
+  -moz-border-radius: 2vw;
+  border-radius: 2vw;
+  */
+}
+
+#caption {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  min-height: calc(3.8rem + 2vh)
+}
+
+#caption span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: calc(1rem + .5vw);
+  font-family: 'Source Sans Pro', sans-serif;
+  max-width: 207px;
+  line-height: 1.4rem;
+}
+
+#info {
+  color: #FFFFFF;
+  font-size: calc(1.3rem + .3vw);
+  padding-top: 4vh;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  padding-bottom: 2vh;
+  font-family: 'Merriweather', serif;
+  line-height: calc(20px + .3vh);
+}
+
+#info span {
+  font-weight: bold;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  min-height: 10vh;
+  /* outline: 1px red solid; */
+}
+
+#sign-link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-bottom: calc(2vh + 2vw);
+  font-family: 'Pacifico', cursive;
+  font-size: calc(2rem + 1.5vw);
+}
+
+#source {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-family: 'Merriweather', serif;
+  font-size: calc(1rem + .6vw);
+  /* outline: 1px red solid; */
+}
+
+a {
+  text-decoration: underline;
+  color: #FFFFFF;
+  
+}
+
+a:visited {
+  color: #78766A;
+  text-decoration: none;
+}
+
+@media screen and (min-height: 300px) and (max-width: 899px) and (orientation: landscape) {
+  header {
+    margin-bottom: 5vh;
+  }
+
+  footer {
+    bottom: 0;
+    min-height: 30vh;
+  }
+
+  #sign-link {
+    padding-top: 8vh;
+    padding-bottom: calc(4vh + 2vw);
+    margin-bottom: 0;
+  }
+
+}
+
+@media screen and (min-width: 900px) {
+  main {
+    padding-left: 15vw;
+    padding-right: 15vw;
+  }
+  #caption span {
+    line-height: 1.8rem;
+    font-size: calc(1rem + 0.25vw);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  html, body {
+    min-height: 100%;
+  }
+
+  header {
+    max-height: 10vh
+  }
+
+  main {
+    padding-left: 20vw;
+    padding-right: 20vw;
+    max-height: 70vh;
+  }
+
+  
+  #info p {
+    font-size: 2vh;
+    line-height: 2.5rem
+  }
+  
+  #galileo-pic {
+    margin-top: 0;
+  }
+  
+  #caption {
+    margin: 0;
+  }
+  
+  #caption span {
+    font-size: 1.4rem;
+  }
+  
+  
+  footer {
+    position: absolute;
+    bottom: 0;
+    max-height: 20vh;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  main {
+    padding-left: 30%;
+    padding-right: 30%;
+  }
+}
+
+@media screen and (min-width:1000px) and (min-height: 1200px) {
+  #info {
+    line-height: 4rem;
+  }
+  
+  footer {
+    position: absolute;
+    bottom: 0%;
+  }
+}
+
