@@ -41,7 +41,7 @@ header h1 {
 
 main {
   width: 100%;
-  min-height: 80vh;
+  /* min-height: 80vh; */
   padding-left: 5vw;
   padding-right: 5vw;
   /*border: 2px red solid;*/
@@ -108,17 +108,16 @@ footer {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding-bottom: 2vh;
+  padding-bottom: calc(2vh + 2vw);
+  font-family: 'Pacifico', cursive;
+  font-size: calc(2rem + 1.5vw);
 }
 
 #source {
   position: absolute;
-  top: 90%;
+  bottom: 0;
   left: 50%;
-  transform: translate(-50%, -50%);
-  /* bottom: 0; */
-  /* right: 0; */
-  display: block;
+  transform: translate(-50%, 0);
   font-family: 'Merriweather', serif;
   font-size: calc(1rem + .6vw);
   /* outline: 1px red solid; */
@@ -130,21 +129,27 @@ a {
   
 }
 
-/*
-a {
-  color: #FFFFFF;
-  text-decoration: underline #082A37 .3rem;
-}
-
-*/
 a:visited {
   color: #78766A;
   text-decoration: none;
 }
 
-#sign {
-  font-family: 'Pacifico', cursive;
-  font-size: calc(2rem + 1.5vw);
+@media screen and (min-height: 300px) and (max-width: 899px) and (orientation: landscape) {
+  header {
+    margin-bottom: 5vh;
+  }
+
+  footer {
+    bottom: 0;
+    min-height: 30vh;
+  }
+
+  #sign-link {
+    padding-top: 8vh;
+    padding-bottom: calc(4vh + 2vw);
+    margin-bottom: 0;
+  }
+
 }
 
 @media screen and (min-width: 900px) {
@@ -160,16 +165,22 @@ a:visited {
 
 @media screen and (min-width: 1000px) {
   html, body {
-    height: 100%;
+    min-height: 100%;
   }
+
+  header {
+    max-height: 10vh
+  }
+
   main {
-    padding-left: 20%;
-    padding-right: 20%;
-    min-height: 60%;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    max-height: 70vh;
   }
+
   
   #info p {
-    font-size: 1.9rem;
+    font-size: 2vh;
     line-height: 2.5rem
   }
   
@@ -185,12 +196,11 @@ a:visited {
     font-size: 1.4rem;
   }
   
-  header {
-    min-height: 20%;
-  }
   
   footer {
-    min-height: 20%;
+    position: absolute;
+    bottom: 0;
+    max-height: 20vh;
   }
 }
 
