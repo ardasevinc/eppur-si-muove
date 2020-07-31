@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # A Tribute Page For Galieo Galilei
 
 This project is an assignment of freeCodeCamp.
@@ -23,3 +24,9 @@ on TV's footer may look weird.
 
 You can access to a [demo](https://ardasevinc.me/eppur-si-muove).
 
+=======
+# Eppur si muove
+A tribute to Galileo Galilei
+
+Access [the page](https://ardasevinc.me/eppur-si-muove)
+>>>>>>> master
