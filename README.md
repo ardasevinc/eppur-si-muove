@@ -18,4 +18,4 @@ All versions will be fully responsive.
 
 ## Where?
 
-You can access to a [demo](https://ardasevinc.me/eppur-si-muove).
+You can access to a [demo](https://demo.ardasevinc.com/eppur-si-muove).
